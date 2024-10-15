@@ -7,7 +7,12 @@ Provide a canvas element that exactly matches the screen pixels and uniform logi
 
 ## Example
 ```html
-<div id="screen" style="width: 100%; height: 100%;"></div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="screen" style="width: 100%; height: 100%;"></div>
+</body>
 ```
 
 ```javascript
@@ -28,6 +33,11 @@ exact.onResize = update;
 ```
 
 ## Usage
+
+Following <meta> viewport element should be included.
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
 
 ### initialize
 ```javascript
